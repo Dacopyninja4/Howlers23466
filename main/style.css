@@ -87,3 +87,8 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+.center-img {
+    display: block;
+    margin: 0 auto;
+}
