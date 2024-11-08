@@ -1,127 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/logo.png""/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Howlers Robotics Team</title>
-    <style>
-        body {
-            background-color: #181818;
-            color: #ffffff;
-            font-family: 'Roboto Mono', monospace;
-            margin: 0;
-            overflow: hidden;
-        }
-
-        header {
-            background-color: #282828;
-            padding: 20px;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 3em;
-            margin-bottom: 0;
-        }
-
-        main {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: calc(100vh - 60px); 
-        }
-
-        .container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            grid-gap: 20px;
-            padding: 20px;
-        }
-
-        .robot-card {
-            background-color: #383838;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            text-align: center;
-        }
-
-        .robot-card img {
-            max-width: 100%;
-            border-radius: 5px;
-        }
-
-        .robot-card h2 {
-            font-size: 1.5em;
-            margin-top: 10px;
-            margin-bottom: 5px;
-        }
-
-        .robot-card p {
-            font-size: 1em;
-            line-height: 1.5;
-        }
-
-        footer {
-            background-color: #282828;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        /* Animation for robot cards */
-        .robot-card {
-            transition: transform 0.3s ease;
-        }
-
-        .robot-card:hover {
-            transform: translateY(-5px);
-        }
-
-        /* Add more CSS for customization */
-
-        /* Example: Gradient background */
-        /* body {
-            background: linear-gradient(to bottom right, #181818, #282828);
-        } */
-
-        /* Example: Neon glow effect */
-        /* h1 {
-            text-shadow: 0 0 10px #00ff00; 
-        } */
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Futuristic Robotics</h1>
+        <img src="logo (copy).png" alt="Howlers Logo">
+        <h1>Howlers Robotics Team</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="main/projects.html">Our Team</a></li>
+                <li><a href="/allprojects.html">All Projects</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <div class="container">
-            <div class="robot-card">
-                <img src="robot1.jpg" alt="Robot 1">
-                <h2>Model X7</h2>
-                <p>Advanced humanoid robot designed for diverse tasks.</p>
-            </div>
-            <div class="robot-card">
-                <img src="robot2.jpg" alt="Robot 2">
-                <h2>Cybernetic Drone</h2>
-                <p>High-speed drone with advanced AI for reconnaissance and surveillance.</p>
-            </div>
-            <div class="robot-card">
-                <img src="robot3.jpg" alt="Robot 3">
-                <h2>Industrial Arm 5000</h2>
-                <p>Highly precise and efficient robotic arm for manufacturing.</p>
-            </div>
-            
-        </div>
-    </main>
+        <nav>
+        <ul>
+            <li><a href="#2023" onclick="scrollToSection('2023')">2023-2024 Season</a></li>
 
-    <footer>
-        <p>&copy; 2023 Futuristic Robotics Inc.</p>
-    </footer>
-</body>
-</html>
+        </ul>
+
+
+    <main>
+        <section id="2023"  style="text-align: center;">
+            <h2>2023-2024 Season</h2>
+            <p>FTC Centerstage: Team 23466 placed #th this season, and here are some pics of our work:</p>
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>Centerstage: 2023-2024 Season</h3>
+                    <img src='/imgs/centerstage.jpg' alt="Centerstage: 2023-2024 Season"> </div>
+                
+
+
+        </section>
+    </main>
