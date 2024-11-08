@@ -16,6 +16,7 @@
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="main/projects.html">Our Team</a></li>
                 <li><a href="/allprojects.html">All Projects</a></li>
+                <!-- This is a hidden message for curious developers! -->
             </ul>
         </nav>
     </header>
@@ -48,10 +49,21 @@ The Howlers are a dynamic robotics team dedicated to innovation and excellence i
                 </div>
             </div>
         </section>
+        <div id="secret-message" style="display: none;">You found me!</div>
+<img src="image.jpg" onmouseover="document.getElementById('secret-message').style.display = 'block';" onmouseout="document.getElementById('secret-message').style.display = 'none';">
+
     </main>
 
     <footer>
         <p>&copy; 2024 Howlers Robotics Team 23466. All rights reserved.</p>
+        <a href="#" onclick="showEasterEgg()" style="font-size: 1px; color: transparent;">Find me!</a>
+
+<script>
+function showEasterEgg() {
+    alert("You found the Easter egg!");
+}
+</script>
+
     </footer>
 </body>
 </html>

@@ -37,7 +37,23 @@
             <p style="color: grey; font-size: 12px; text-align: center;">Coming Soon!</p>
             <!-- Keep images of our team members in the <section> tags, so that they appear in the white box -->
         </section>
+        let konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]; 
+let konamiIndex = 0;
+
+document.addEventListener('keydown', (event) => {
+    if (event.keyCode === konamiCode[konamiIndex++]) {
+        if (konamiIndex === konamiCode.length) {
+            konamiIndex = 0;
+            // Trigger Easter egg here
+            alert("Konami Code activated!");
+        }
+    } else {
+        konamiIndex = 0;
+    }
+});
+
     </main>
+    
 
     <footer>
         <p>&copy; 2024 Howlers Robotics Team. All rights reserved.</p>
