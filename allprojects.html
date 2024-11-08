@@ -3,72 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Projects</title>
+    <title>Howlers Robotics Team</title>
     <style>
         body {
-            font-family: sans-serif;
+            background-color: #181818;
+            color: #ffffff;
+            font-family: 'Roboto Mono', monospace;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            overflow: hidden;
         }
 
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: #282828;
+            padding: 20px;
             text-align: center;
-            padding: 1em 0;
         }
 
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav li {
-            display: inline;
-            margin: 0 1em;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0;
         }
 
         main {
-            padding: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 60px); 
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        .robot-card {
+            background-color: #383838;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .robot-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .robot-card h2 {
+            font-size: 1.5em;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .robot-card p {
+            font-size: 1em;
+            line-height: 1.5;
         }
 
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: #282828;
+            padding: 10px;
             text-align: center;
-            padding: 1em 0;
             position: fixed;
             bottom: 0;
             width: 100%;
         }
+
+        /* Animation for robot cards */
+        .robot-card {
+            transition: transform 0.3s ease;
+        }
+
+        .robot-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Add more CSS for customization */
+
+        /* Example: Gradient background */
+        /* body {
+            background: linear-gradient(to bottom right, #181818, #282828);
+        } */
+
+        /* Example: Neon glow effect */
+        /* h1 {
+            text-shadow: 0 0 10px #00ff00; 
+        } */
+
     </style>
 </head>
 <body>
     <header>
-        <h1>The Howlers</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Futuristic Robotics</h1>
     </header>
 
     <main>
-        <h2>Welcome to my website!</h2>
-        <p>This is a basic example of a modern and smooth looking website. You can customize it further by adding more content, images, and styling.</p>
+        <div class="container">
+            <div class="robot-card">
+                <img src="robot1.jpg" alt="Robot 1">
+                <h2>Model X7</h2>
+                <p>Advanced humanoid robot designed for diverse tasks.</p>
+            </div>
+            <div class="robot-card">
+                <img src="robot2.jpg" alt="Robot 2">
+                <h2>Cybernetic Drone</h2>
+                <p>High-speed drone with advanced AI for reconnaissance and surveillance.</p>
+            </div>
+            <div class="robot-card">
+                <img src="robot3.jpg" alt="Robot 3">
+                <h2>Industrial Arm 5000</h2>
+                <p>Highly precise and efficient robotic arm for manufacturing.</p>
+            </div>
+            
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2023 My Website</p>
+        <p>&copy; 2023 Futuristic Robotics Inc.</p>
     </footer>
 </body>
 </html>
